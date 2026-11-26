@@ -1,0 +1,33 @@
+// Resources of s3tcmd.wfx64. Total Commander shows the FIRST icon of the plugin DLL next to the
+// plugin name in Network Neighborhood.
+#include <winver.h>
+#include "../src/version.h"
+
+1 ICON "s3tcmd.ico"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION S3TCMD_VERSION_MAJOR,S3TCMD_VERSION_MINOR,S3TCMD_VERSION_PATCH,0
+ PRODUCTVERSION S3TCMD_VERSION_MAJOR,S3TCMD_VERSION_MINOR,S3TCMD_VERSION_PATCH,0
+ FILEFLAGSMASK 0x3fL
+ FILEFLAGS 0x0L
+ FILEOS VOS_NT_WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "AWS S3 file system plugin for Total Commander (via AWS CLI)"
+            VALUE "FileVersion", S3TCMD_VERSION_STR
+            VALUE "InternalName", "s3tcmd"
+            VALUE "OriginalFilename", "s3tcmd.wfx64"
+            VALUE "ProductName", "S3Tcmd"
+            VALUE "ProductVersion", S3TCMD_VERSION_STR
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END

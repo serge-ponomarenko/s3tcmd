@@ -1,0 +1,15 @@
+build/
+out/
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.wfx
+*.wfx64
+.vs/
+*.user
+
+# Local only: integration test settings and the private development notes
+tests/it.local.bat
+PLAN.md
